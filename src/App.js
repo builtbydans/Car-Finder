@@ -1,8 +1,7 @@
-import { useState } from "react";
 import "./index.css";
 import Form from "./components/Form/Form";
 import Results from "./components/Results";
-import bmwdmpu from "./images/bmw 300x600.jpg";
+import FireData from "./components/Firebase/FireData";
 
 const App = () => {
   return (
@@ -15,7 +14,8 @@ const App = () => {
         </div>
         <div style={{ width: "70%" }}>
           <h3>Results</h3>
-          <Results />
+          {/* <Results /> */}
+          {<FireData />}
         </div>
       </div>
     </>

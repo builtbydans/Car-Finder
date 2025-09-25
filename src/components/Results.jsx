@@ -12,6 +12,16 @@ const Results = () => {
             parseInt(fuelCosts);
           return (
             <div>
+              <img
+                src="/images/citroen_c3_1.webp"
+                alt="Citroen C3"
+                height={200}
+              />
+              <img
+                src="/images/citroen_c3_2.webp"
+                alt="Citroen C3"
+                height={200}
+              />
               <p>car: {car}</p>
               <p>insurance: {averageInsurance}</p>
               <p>finance (pcp): {financePrice.pcp}</p>
