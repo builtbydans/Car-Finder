@@ -5,7 +5,6 @@ import Results from "./components/Results";
 const App = () => {
   return (
     <>
-      <h1>Car Finder</h1>
       <div className="app">
         <div style={{ width: "25%" }}>
           <h3>Form Section</h3>

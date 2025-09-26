@@ -14,6 +14,7 @@ const Results = () => {
             img={data.imageUrl}
             makeModel={`${data.make} ${data.model}`}
             totalPCM={`£${data.totalPCM}`}
+            isElectric={data.isElectric}
           />
         );
       })}

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const VehicleCard = ({ img, makeModel, totalPCM }) => {
+const VehicleCard = ({ img, makeModel, totalPCM, isElectric }) => {
   const [imgSrc, setImgSrc] = useState(img);
 
   return (
@@ -10,12 +10,22 @@ const VehicleCard = ({ img, makeModel, totalPCM }) => {
         onMouseEnter={() => setImgSrc(imgSrc.replace("_1.webp", "_2.webp"))}
         onMouseLeave={() => setImgSrc(imgSrc.replace("_2.webp", "_1.webp"))}
       >
-        <img
-          src={imgSrc}
-          alt="Citroen C3"
-          height="150px"
-          className="w-full h-48 object-contain"
-        />
+        <div className="relative">
+          {isElectric && (
+            <img
+              src="/images/electric-car-symbol.png"
+              alt="electric-car-symbol"
+              width="30"
+              className="absolute right-2"
+            />
+          )}
+
+          <img
+            src={imgSrc}
+            alt="Vehicle"
+            className="w-full h-48 object-contain"
+          />
+        </div>
       </div>
       <div className="mt-4">
         <h3 className="text-lg font-semibold">{makeModel}</h3>
