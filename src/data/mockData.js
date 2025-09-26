@@ -2,6 +2,7 @@ export const mockData = [
   {
     make: "Citroen",
     model: "C3",
+    isElectric: false,
     imageUrl: "images/citroen_c3_1.webp",
     lease: { depositAmount: 2000.16, monthlyCost: 166.68 },
     totalPCM: 540.16,
@@ -9,6 +10,7 @@ export const mockData = [
   {
     make: "Dacia",
     model: "Spring",
+    isElectric: false,
     imageUrl: "images/dacia_spring_1.webp",
     lease: { depositAmount: 4000, monthlyCost: 399 },
     totalPCM: 419.03,
@@ -16,8 +18,33 @@ export const mockData = [
   {
     make: "Vauxhall",
     model: "Corsa",
+    isElectric: false,
     imageUrl: "images/vauxhall_corsa_1.webp",
     lease: { depositAmount: 4000, monthlyCost: 399 },
     totalPCM: 527.09,
+  },
+  {
+    make: "Renault",
+    model: "Symbioz",
+    isElectric: false,
+    imageUrl: "images/renault_symbioz_1.webp",
+    lease: { depositAmount: 4000, monthlyCost: 399 },
+    totalPCM: 397.09,
+  },
+  {
+    make: "Seat",
+    model: "Ibiza",
+    isElectric: false,
+    imageUrl: "images/seat_ibiza_1.webp",
+    lease: { depositAmount: 4000, monthlyCost: 399 },
+    totalPCM: 431.44,
+  },
+  {
+    make: "BYD",
+    model: "Atto",
+    isElectric: true,
+    imageUrl: "images/byd_atto_1.webp",
+    lease: { depositAmount: 4000, monthlyCost: 399 },
+    totalPCM: 387.78,
   },
 ];
