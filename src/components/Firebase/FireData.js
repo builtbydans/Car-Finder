@@ -35,7 +35,7 @@ const FireData = () => {
           <img
             src={car.imageUrl}
             alt={`${car.make} ${car.model}`}
-            style={{ width: "200px" }}
+            style={{ width: "250px" }}
           />
         </div>
       ))}
