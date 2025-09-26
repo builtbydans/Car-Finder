@@ -1,13 +1,23 @@
 import React from "react";
-import { mockData } from "../mockData";
+import { mockData } from "../data/mockData";
 import FireData from "./Firebase/FireData";
 import VehicleCard from "./Results/VehicleCard/VehicleCard";
 
 const Results = () => {
   return (
-    <div>
-      <VehicleCard />
-      <FireData />
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {mockData.map((data, index) => {
+        console.log(data, "hi");
+        return (
+          <VehicleCard
+            key={index}
+            img={data.imageUrl}
+            makeModel={`${data.make} ${data.model}`}
+            totalPCM={`£${data.totalPCM}`}
+          />
+        );
+      })}
+      {/* <FireData /> */}
     </div>
   );
 };

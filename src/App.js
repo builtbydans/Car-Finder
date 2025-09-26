@@ -7,12 +7,13 @@ const App = () => {
     <>
       <h1>Car Finder</h1>
       <div className="app">
-        <div style={{ width: "30%" }}>
+        <div style={{ width: "25%" }}>
           <h3>Form Section</h3>
           <Form />
         </div>
-        <div style={{ width: "70%" }}>
+        <div style={{ width: "75%" }}>
           <h3>Results Section</h3>
+          <p>Sort By: Price Low to High</p>
           <Results />
         </div>
       </div>
